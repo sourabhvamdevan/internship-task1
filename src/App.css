@@ -1,0 +1,215 @@
+body {
+  text-align: center;
+  color: #f5f5f5;
+  background-image: linear-gradient(-90deg , #0c0c0d, #1a1a1a);
+  font-family: 'Roboto';
+  height: 200vh;
+  background: black;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.app {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.typeinput{
+  text-align: center;
+  width: 250px;
+  height: 30px;
+  margin-top: 20px;
+}
+article {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #50bcf2;
+  box-sizing: border-box;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: .5s ease;
+}
+
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div {
+  background-color: #50bcf2;
+}
+
+.upgrade-btn {
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+  padding: 10px 20px;
+  border: 2px solid #50bcf2;
+  border-radius: 50px;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+/* .upgrade-btn:hover {
+  background-color: #50bcf2;
+} */
+
+.blue-color {
+  color: #50bcf2;
+}
+
+.gray-color {
+  color: #555;
+}
+
+.social i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top:5px;
+  right:5px;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin: 0%;
+    width: 100%;
+  }
+}
+
+
+
+.expand-checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+.walking-options,.running-options,.movies-options,.shopping-options,.Errands-options,.Childcare-options,.Eldercare-options,.Petcare-options{
+  /* border:2px solid white; */
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  display: none;
+  margin-bottom: 20px;
+}
+.walking-options-inside,.running-options-inside,.movies-options-inside,.shopping-options-inside,.Errands-options-inside,.Childcare-options-inside,.Eldercare-options-inside,.Petcare-options-inside{
+  display: flex;
+  justify-content: center;
+}
+.options-text{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* .first-section{
+  display: flex;
+  border: 2px solid white;
+  width: 80vw;
+  justify-content: space-between  ;
+} */
+.second-section,.third-section,.forth-section{
+  display: flex;
+  /* border: 2px solid white; */
+  width: 80vw;
+  justify-content: center  ;
+  margin-top: 20px;
+}
+.first-section,.fifth-section{
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.btn-space{
+  border: 2px solid white;
+  /* display: flex; */
+  /* float: right; */
+  
+  margin-left: 60vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.next-page-button{
+  font-size: 25px;
+  width: 110px;
+  color: black;
+  background-color: white;
+  height: 40px;
+  border-radius: 5px;
+  /* border: none; */
+}
+.next-page-button:hover{
+  border: 2px solid rgb(25, 18, 168);
+  background-color: black;
+  color: white;
+}
+.Customcheckbox{
+  border: 2px solid white;
+
+}
+.tutoring-text{
+  margin-top: 10px;
+}
+#tutoring{
+  margin-bottom: 10px;
+}
+#submit-btn{
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+}
+#submit-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width:500px){
+  .heading{
+    margin-left: 30vw;
+  }
+  .app,.app2{
+    margin-left: 30vw;
+  }
+  
+}
+/* @media screen and (max-width:400px){
+  .App{
+    
+    margin-right: 10vw;
+  }
+  
+} */
